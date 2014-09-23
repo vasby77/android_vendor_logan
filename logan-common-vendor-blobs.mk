@@ -23,6 +23,9 @@
 	vendor/samsung/logan/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
 	vendor/samsung/logan/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
 	vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
+	vendor/samsung/logan/proprietary/lib/modules/exfat_core.ko:system/lib/modules/exfat_core.ko \
+	vendor/samsung/logan/proprietary/lib/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko \
+	vendor/samsung/logan/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
 	vendor/samsung/logan/proprietary/lib/libasound.so:system/lib/libasound.so \
 	vendor/samsung/logan/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
 	vendor/samsung/logan/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v04004.so:system/lib/lib_Samsung_SB_AM_for_ICS_v04004.so \
@@ -37,6 +40,10 @@
 	vendor/samsung/logan/proprietary/lib/libcapi2.so:system/lib/libcapi2.so \
 	vendor/samsung/logan/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so \
 	vendor/samsung/logan/proprietary/lib/libcontainers.so:system/lib/libcontainers.so \
+	vendor/samsung/logan/proprietary/lib/libEGL.so:system/lib/libEGL.so \
+	vendor/samsung/logan/proprietary/lib/libGLES_trace.so:system/lib/libGLES_trace.so \
+	vendor/samsung/logan/proprietary/lib/libGLESv1_CM.so:system/lib/libGLESv1_CM.so \
+	vendor/samsung/logan/proprietary/lib/libGLESv2.so:system/lib/libGLESv2.so \
 	vendor/samsung/logan/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
 	vendor/samsung/logan/proprietary/lib/libril.so:system/lib/libril.so \
 	vendor/samsung/logan/proprietary/lib/librpc.so:system/lib/librpc.so \
@@ -68,6 +75,8 @@
 	vendor/samsung/logan/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
 	vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_NB.txt:system/etc/DiamondVoice_SF_Filter_NB.txt \
 	vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_WB.txt:system/etc/DiamondVoice_SF_Filter_WB.txt \
+	vendor/samsung/logan/proprietary/etc/vold.conf:system/etc/vold.conf \
+	vendor/samsung/logan/proprietary/etc/vold.fstab:system/etc/vold.fstab \
 	vendor/samsung/logan/proprietary/etc/gps.conf:system/etc/gps.conf \
 	vendor/samsung/logan/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
 	vendor/samsung/logan/proprietary/etc/Volume.db:system/etc/Volume.db \
