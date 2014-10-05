@@ -43,6 +43,9 @@
     vendor/samsung/logan/proprietary/lib/hw/gps.hawaii.so:system/lib/hw/gps.hawaii.so \
     vendor/samsung/logan/proprietary/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
     vendor/samsung/logan/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
+	vendor/samsung/logan/proprietary/lib/modules/exfat_core.ko:system/lib/modules/exfat_core.ko \
+	vendor/samsung/logan/proprietary/lib/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko \
+	vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
     vendor/samsung/logan/proprietary/lib/libasound.so:system/lib/libasound.so \
     vendor/samsung/logan/proprietary/lib/libat.so:system/lib/libat.so \
     vendor/samsung/logan/proprietary/lib/libat_stubs.so:system/lib/libat_stubs.so \
