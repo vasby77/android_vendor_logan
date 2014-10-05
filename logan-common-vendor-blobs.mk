@@ -59,7 +59,6 @@
     vendor/samsung/logan/proprietary/lib/libbrcmheaacdecoder.so:system/lib/libbrcmheaacdecoder.so \
     vendor/samsung/logan/proprietary/lib/libbrcmmp3dec.so:system/lib/libbrcmmp3dec.so \
     vendor/samsung/logan/proprietary/lib/libbrcmmp3enc.so:system/lib/libbrcmmp3enc.so \
-    vendor/samsung/logan/proprietary/lib/libbrcmwmadec.so:system/lib/libbrcmwmadec.so \
     vendor/samsung/logan/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
     vendor/samsung/logan/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
     vendor/samsung/logan/proprietary/lib/libhwcodec.so:system/lib/libhwcodec.so \
@@ -95,7 +94,7 @@
     vendor/samsung/logan/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
     vendor/samsung/logan/proprietary/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
     vendor/samsung/logan/proprietary/lib/libsoundalive.so:system/lib/libsoundalive.so \
-    vendor/samsung/logan/proprietary/lib/lib_SoundAlive_V01013q.so:system/lib/lib_SoundAlive_V01013q.so \
+    vendor/samsung/logan/proprietary/lib/lib_SoundAlive_V01013n.so:system/lib/lib_SoundAlive_V01013n.so \
     vendor/samsung/logan/proprietary/lib/libSoundAlive_VSP_ver312a.so:system/lib/libSoundAlive_VSP_ver312a.so \
     vendor/samsung/logan/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
     vendor/samsung/logan/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
