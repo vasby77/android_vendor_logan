@@ -26,6 +26,7 @@
     vendor/samsung/logan/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/logan/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
     vendor/samsung/logan/proprietary/etc/Volume.db:system/etc/Volume.db \
+	vendor/samsung/logan/proprietary/etc/vold.fstab:system/etc/vold.fstab \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
