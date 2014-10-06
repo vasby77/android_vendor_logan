@@ -13,6 +13,9 @@
     vendor/samsung/logan/proprietary/bin/mfgloader:system/bin/mfgloader \
     vendor/samsung/logan/proprietary/bin/mttlogger:system/bin/mttlogger \
     vendor/samsung/logan/proprietary/bin/npsmobex:system/bin/npsmobex \
+	vendor/samsung/logan/proprietary/bin/sdcard:system/bin/sdcard \
+	vendor/samsung/logan/proprietary/bin/sensord:system/bin/sensord \
+	vendor/samsung/logan/proprietary/bin/setup_fs:system/bin/setup_fs \
     vendor/samsung/logan/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/logan/proprietary/bin/usb_portd:system/bin/usb_portd \
     vendor/samsung/logan/proprietary/bin/wlandutservice:system/bin/wlandutservice \
