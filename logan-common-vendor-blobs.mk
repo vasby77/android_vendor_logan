@@ -13,20 +13,21 @@
     vendor/samsung/logan/proprietary/bin/mfgloader:system/bin/mfgloader \
     vendor/samsung/logan/proprietary/bin/mttlogger:system/bin/mttlogger \
     vendor/samsung/logan/proprietary/bin/npsmobex:system/bin/npsmobex \
-	vendor/samsung/logan/proprietary/bin/sdcard:system/bin/sdcard \
 	vendor/samsung/logan/proprietary/bin/sensord:system/bin/sensord \
-	vendor/samsung/logan/proprietary/bin/setup_fs:system/bin/setup_fs \
     vendor/samsung/logan/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/logan/proprietary/bin/usb_portd:system/bin/usb_portd \
     vendor/samsung/logan/proprietary/bin/wlandutservice:system/bin/wlandutservice \
-    vendor/samsung/logan/proprietary/cameradata/datapattern_420sp.yuv:system/cameradata/datapattern_420sp.yuv \
-    vendor/samsung/logan/proprietary/cameradata/datapattern_front_420sp.yuv:system/cameradata/datapattern_front_420sp.yuv \
     vendor/samsung/logan/proprietary/etc/asound.conf:system/etc/asound.conf \
     vendor/samsung/logan/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
     vendor/samsung/logan/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/logan/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
     vendor/samsung/logan/proprietary/etc/Volume.db:system/etc/Volume.db \
-	vendor/samsung/logan/proprietary/etc/vold.fstab:system/etc/vold.fstab \
+	vendor/samsung/logan/proprietary/etc/DiamondVoice_Filter_NB.txt:system/etc/DiamondVoice_Filter_NB.txt \
+    vendor/samsung/logan/proprietary/etc/DiamondVoice_Filter_WB.txt:system/etc/DiamondVoice_Filter_WB.txt \
+    vendor/samsung/logan/proprietary/etc/DiamondVoice_NB.txt:system/etc/DiamondVoice_NB.txt \
+    vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_NB.txt:system/etc/DiamondVoice_SF_Filter_NB.txt \
+    vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_WB.txt:system/etc/DiamondVoice_SF_Filter_WB.txt \
+	vendor/samsung/logan/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_p2p.bin:system/etc/wifi/bcmdhd_p2p.bin \
@@ -34,7 +35,6 @@
     vendor/samsung/logan/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
     vendor/samsung/logan/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/logan/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/logan/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/samsung/logan/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
     vendor/samsung/logan/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/logan/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
