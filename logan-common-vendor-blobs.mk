@@ -17,6 +17,7 @@
     vendor/samsung/logan/proprietary/bin/rild:system/bin/rild \
     vendor/samsung/logan/proprietary/bin/usb_portd:system/bin/usb_portd \
     vendor/samsung/logan/proprietary/bin/wlandutservice:system/bin/wlandutservice \
+	vendor/samsung/logan/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
     vendor/samsung/logan/proprietary/etc/asound.conf:system/etc/asound.conf \
     vendor/samsung/logan/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
     vendor/samsung/logan/proprietary/etc/gps.conf:system/etc/gps.conf \
@@ -41,6 +42,11 @@
     vendor/samsung/logan/proprietary/lib/drm/libplayreadyplugin.so:system/lib/drm/libplayreadyplugin.so \
     vendor/samsung/logan/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/logan/proprietary/lib/hw/audio.primary.hawaii.so:system/lib/hw/audio.primary.hawaii.so \
+	vendor/samsung/logan/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
+	vendor/samsung/logan/proprietary/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
+	vendor/samsung/logan/proprietary/lib/hw/audio.tms.default.so:system/lib/hw/audio.tms.default.so \
+	vendor/samsung/logan/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
+	vendor/samsung/logan/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
     vendor/samsung/logan/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
     vendor/samsung/logan/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
     vendor/samsung/logan/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
@@ -51,6 +57,8 @@
 	vendor/samsung/logan/proprietary/lib/modules/exfat_fs.ko:system/lib/modules/exfat_fs.ko \
 	vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
     vendor/samsung/logan/proprietary/lib/libasound.so:system/lib/libasound.so \
+	vendor/samsung/logan/proprietary/lib/libaacdecoderwrapper.so:system/lib/libaacdecoderwrapper.so \
+	vendor/samsung/logan/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so \
     vendor/samsung/logan/proprietary/lib/libat.so:system/lib/libat.so \
     vendor/samsung/logan/proprietary/lib/libat_stubs.so:system/lib/libat_stubs.so \
     vendor/samsung/logan/proprietary/lib/libatlog.so:system/lib/libatlog.so \
