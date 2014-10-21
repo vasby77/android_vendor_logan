@@ -1,3 +1,13 @@
+# Not copy this files
+#	vendor/samsung/logan/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
+#   vendor/samsung/logan/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
+# 	vendor/samsung/logan/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
+#	vendor/samsung/logan/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
+#	vendor/samsung/logan/proprietary/lib/hw/camera.goldfish.so:system/lib/hw/camera.goldfish.so \
+#   vendor/samsung/logan/proprietary/lib/hw/gps.goldfish.so:system/lib/hw/gps.goldfish.so \
+#   vendor/samsung/logan/proprietary/lib/hw/lights.goldfish.so:system/lib/hw/lights.goldfish.so \
+#   vendor/samsung/logan/proprietary/lib/hw/power.goldfish.so:system/lib/hw/power.goldfish.so \
+
 PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/bin/at_distributor:system/bin/at_distributor \
     vendor/samsung/logan/proprietary/bin/atrace:system/bin/atrace \
@@ -16,6 +26,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/bin/mfgloader:system/bin/mfgloader \
     vendor/samsung/logan/proprietary/bin/usb_portd:system/bin/usb_portd \
     vendor/samsung/logan/proprietary/bin/wlandutservice:system/bin/wlandutservice \
+	vendor/samsung/logan/proprietary/bin/sensord:system/bin/sensord \
     vendor/samsung/logan/proprietary/etc/asound.conf:system/etc/asound.conf \
     vendor/samsung/logan/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
     vendor/samsung/logan/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
@@ -27,18 +38,27 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
     vendor/samsung/logan/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
     vendor/samsung/logan/proprietary/etc/gps.conf:system/etc/gps.conf \
-    vendor/samsung/logan/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
     vendor/samsung/logan/proprietary/etc/Volume.db:system/etc/Volume.db \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     vendor/samsung/logan/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
     vendor/samsung/logan/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt \
     vendor/samsung/logan/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/logan/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
-    vendor/samsung/logan/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+	vendor/samsung/logan/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
+    vendor/samsung/logan/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
+    vendor/samsung/logan/proprietary/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
+    vendor/samsung/logan/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
+    vendor/samsung/logan/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
+    vendor/samsung/logan/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
+	vendor/samsung/logan/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     vendor/samsung/logan/proprietary/lib/hw/audio.primary.hawaii.so:system/lib/hw/audio.primary.hawaii.so \
     vendor/samsung/logan/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
     vendor/samsung/logan/proprietary/lib/hw/gps.hawaii.so:system/lib/hw/gps.hawaii.so \
     vendor/samsung/logan/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
+    vendor/samsung/logan/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
+    vendor/samsung/logan/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
+    vendor/samsung/logan/proprietary/lib/drm/libplayreadyplugin.so:system/lib/drm/libplayreadyplugin.so \
+	vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
+    vendor/samsung/logan/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
     vendor/samsung/logan/proprietary/lib/libasound.so:system/lib/libasound.so \
     vendor/samsung/logan/proprietary/lib/libsavscmn.so:system/lib/libsavscmn.so \
     vendor/samsung/logan/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
@@ -88,34 +108,13 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so \
     vendor/samsung/logan/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
-    vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
     vendor/samsung/logan/proprietary/lib/libkeystore_client.so:system/lib/libkeystore_client.so \
     vendor/samsung/logan/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
     vendor/samsung/logan/proprietary/lib/libISP.so:system/lib/libISP.so \
     vendor/samsung/logan/proprietary/lib/libisp2.so:system/lib/libisp2.so \
 	vendor/samsung/logan/proprietary/lib/libisp3.so:system/lib/libisp3.so \
-    vendor/samsung/logan/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
-    vendor/samsung/logan/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
-    vendor/samsung/logan/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
-    vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
-    vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
-    vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
-    vendor/samsung/logan/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
-    vendor/samsung/logan/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
-    vendor/samsung/logan/proprietary/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
-    vendor/samsung/logan/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
-    vendor/samsung/logan/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
-    vendor/samsung/logan/proprietary/vendor/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so \
-    vendor/samsung/logan/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
-    vendor/samsung/logan/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
-    vendor/samsung/logan/proprietary/lib/drm/libplayreadyplugin.so:system/lib/drm/libplayreadyplugin.so \
-    vendor/samsung/logan/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-    vendor/samsung/logan/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
-    vendor/samsung/logan/proprietary/lib/hw/camera.goldfish.so:system/lib/hw/camera.goldfish.so \
-    vendor/samsung/logan/proprietary/lib/hw/gps.goldfish.so:system/lib/hw/gps.goldfish.so \
-    vendor/samsung/logan/proprietary/lib/hw/lights.goldfish.so:system/lib/hw/lights.goldfish.so \
-    vendor/samsung/logan/proprietary/lib/hw/power.goldfish.so:system/lib/hw/power.goldfish.so \
-    vendor/samsung/logan/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
+	vendor/samsung/logan/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
+    vendor/samsung/logan/proprietary/lib/libV3D_driver.so:system/lib/libV3D_driver.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.decoder.so:system/lib/libOMX.brcm.audio.aac.decoder.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrnb.decoder.so:system/lib/libOMX.brcm.audio.amrnb.decoder.so \
@@ -137,5 +136,9 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.encoder.so:system/lib/libOMX.brcm.video.mpeg4.encoder.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.hw.decoder.so:system/lib/libOMX.brcm.video.mpeg4.hw.decoder.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vpx.decoder.so:system/lib/libOMX.brcm.video.vpx.decoder.so \
-    vendor/samsung/logan/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
-    vendor/samsung/logan/proprietary/lib/libV3D_driver.so:system/lib/libV3D_driver.so
+	vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
+    vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
+    vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
+    vendor/samsung/logan/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
+	vendor/samsung/logan/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
+    vendor/samsung/logan/proprietary/vendor/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so
