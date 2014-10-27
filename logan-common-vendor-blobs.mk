@@ -1,7 +1,6 @@
 # Not copy this files
 #	vendor/samsung/logan/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
 #   vendor/samsung/logan/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
-# 	vendor/samsung/logan/proprietary/etc/media_profiles.xml:system/etc/media_profiles.xml \
 #	vendor/samsung/logan/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
 #	vendor/samsung/logan/proprietary/lib/hw/camera.goldfish.so:system/lib/hw/camera.goldfish.so \
 #   vendor/samsung/logan/proprietary/lib/hw/gps.goldfish.so:system/lib/hw/gps.goldfish.so \
