@@ -6,12 +6,14 @@
 #   vendor/samsung/logan/proprietary/lib/hw/gps.goldfish.so:system/lib/hw/gps.goldfish.so \
 #   vendor/samsung/logan/proprietary/lib/hw/lights.goldfish.so:system/lib/hw/lights.goldfish.so \
 #   vendor/samsung/logan/proprietary/lib/hw/power.goldfish.so:system/lib/hw/power.goldfish.so \
+#   vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/bin/at_distributor:system/bin/at_distributor \
     vendor/samsung/logan/proprietary/bin/atrace:system/bin/atrace \
     vendor/samsung/logan/proprietary/bin/atx:system/bin/atx \
     vendor/samsung/logan/proprietary/bin/atxd:system/bin/atxd \
+	vendor/samsung/logan/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
     vendor/samsung/logan/proprietary/bin/BCM4330B1_002.001.003.0967.1173.hcd:system/bin/BCM4330B1_002.001.003.0967.1173.hcd \
     vendor/samsung/logan/proprietary/bin/bkmgrd:system/bin/bkmgrd \
     vendor/samsung/logan/proprietary/bin/glgps:system/bin/glgps \
@@ -56,10 +58,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/logan/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
     vendor/samsung/logan/proprietary/lib/drm/libplayreadyplugin.so:system/lib/drm/libplayreadyplugin.so \
-	vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
     vendor/samsung/logan/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
     vendor/samsung/logan/proprietary/lib/libasound.so:system/lib/libasound.so \
     vendor/samsung/logan/proprietary/lib/libsavscmn.so:system/lib/libsavscmn.so \
+	vendor/samsung/logan/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so \
     vendor/samsung/logan/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     vendor/samsung/logan/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v04004.so:system/lib/lib_Samsung_SB_AM_for_ICS_v04004.so \
     vendor/samsung/logan/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
@@ -105,7 +107,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     vendor/samsung/logan/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
     vendor/samsung/logan/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
-    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so \
     vendor/samsung/logan/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
     vendor/samsung/logan/proprietary/lib/libkeystore_client.so:system/lib/libkeystore_client.so \
     vendor/samsung/logan/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
@@ -114,6 +115,7 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/logan/proprietary/lib/libisp3.so:system/lib/libisp3.so \
 	vendor/samsung/logan/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
     vendor/samsung/logan/proprietary/lib/libV3D_driver.so:system/lib/libV3D_driver.so \
+	vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.decoder.so:system/lib/libOMX.brcm.audio.aac.decoder.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
     vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrnb.decoder.so:system/lib/libOMX.brcm.audio.amrnb.decoder.so \
