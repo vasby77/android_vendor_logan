@@ -7,6 +7,13 @@
 #   vendor/samsung/logan/proprietary/lib/hw/lights.goldfish.so:system/lib/hw/lights.goldfish.so \
 #   vendor/samsung/logan/proprietary/lib/hw/power.goldfish.so:system/lib/hw/power.goldfish.so \
 #   vendor/samsung/logan/proprietary/lib/modules/VoiceSolution.ko:system/lib/modules/VoiceSolution.ko \
+# 	vendor/samsung/logan/proprietary/etc/DiamondVoice_Filter_NB.txt:system/etc/DiamondVoice_Filter_NB.txt \
+#   vendor/samsung/logan/proprietary/etc/DiamondVoice_Filter_WB.txt:system/etc/DiamondVoice_Filter_WB.txt \
+#   vendor/samsung/logan/proprietary/etc/DiamondVoice_NB.txt:system/etc/DiamondVoice_NB.txt \
+#   vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_NB.txt:system/etc/DiamondVoice_SF_Filter_NB.txt \
+#   vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_WB.txt:system/etc/DiamondVoice_SF_Filter_WB.txt \
+#   vendor/samsung/logan/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
+#   vendor/samsung/logan/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/bin/at_distributor:system/bin/at_distributor \
@@ -29,14 +36,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/bin/wlandutservice:system/bin/wlandutservice \
 	vendor/samsung/logan/proprietary/bin/sensord:system/bin/sensord \
     vendor/samsung/logan/proprietary/etc/asound.conf:system/etc/asound.conf \
-    vendor/samsung/logan/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
     vendor/samsung/logan/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
-    vendor/samsung/logan/proprietary/etc/DiamondVoice_Filter_NB.txt:system/etc/DiamondVoice_Filter_NB.txt \
-    vendor/samsung/logan/proprietary/etc/DiamondVoice_Filter_WB.txt:system/etc/DiamondVoice_Filter_WB.txt \
-    vendor/samsung/logan/proprietary/etc/DiamondVoice_NB.txt:system/etc/DiamondVoice_NB.txt \
-    vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_NB.txt:system/etc/DiamondVoice_SF_Filter_NB.txt \
-    vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_WB.txt:system/etc/DiamondVoice_SF_Filter_WB.txt \
-    vendor/samsung/logan/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
     vendor/samsung/logan/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
     vendor/samsung/logan/proprietary/etc/gps.conf:system/etc/gps.conf \
     vendor/samsung/logan/proprietary/etc/Volume.db:system/etc/Volume.db \
