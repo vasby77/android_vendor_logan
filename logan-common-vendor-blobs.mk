@@ -14,30 +14,8 @@
 #   vendor/samsung/logan/proprietary/etc/DiamondVoice_SF_Filter_WB.txt:system/etc/DiamondVoice_SF_Filter_WB.txt \
 #   vendor/samsung/logan/proprietary/etc/DiamondVoice_WB.txt:system/etc/DiamondVoice_WB.txt \
 #   vendor/samsung/logan/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
-#	vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.decoder.so:system/lib/libOMX.brcm.audio.aac.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrnb.decoder.so:system/lib/libOMX.brcm.audio.amrnb.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrnb.encoder.so:system/lib/libOMX.brcm.audio.amrnb.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrwb.decoder.so:system/lib/libOMX.brcm.audio.amrwb.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrwb.encoder.so:system/lib/libOMX.brcm.audio.amrwb.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.mp3.decoder.so:system/lib/libOMX.brcm.audio.mp3.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.mp3.encoder.so:system/lib/libOMX.brcm.audio.mp3.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.dummy.decoder.so:system/lib/libOMX.brcm.video.dummy.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.dummy.encoder.so:system/lib/libOMX.brcm.video.dummy.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h263.decoder.so:system/lib/libOMX.brcm.video.h263.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h263.encoder.so:system/lib/libOMX.brcm.video.h263.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.decoder.so:system/lib/libOMX.brcm.video.h264.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.encoder.so:system/lib/libOMX.brcm.video.h264.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.hw.decoder.so:system/lib/libOMX.brcm.video.h264.hw.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.decoder.so:system/lib/libOMX.brcm.video.mpeg4.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.encoder.so:system/lib/libOMX.brcm.video.mpeg4.encoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.hw.decoder.so:system/lib/libOMX.brcm.video.mpeg4.hw.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vpx.decoder.so:system/lib/libOMX.brcm.video.vpx.decoder.so \
-#    vendor/samsung/logan/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
-#    vendor/samsung/logan/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
+#   vendor/samsung/logan/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
+#   vendor/samsung/logan/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/bin/at_distributor:system/bin/at_distributor \
@@ -82,7 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
     vendor/samsung/logan/proprietary/lib/drm/libomaplugin.so:system/lib/drm/libomaplugin.so \
     vendor/samsung/logan/proprietary/lib/drm/libplayreadyplugin.so:system/lib/drm/libplayreadyplugin.so \
-    vendor/samsung/logan/proprietary/lib/libstagefright_avc_common.so:system/lib/libstagefright_avc_common.so \
     vendor/samsung/logan/proprietary/lib/libasound.so:system/lib/libasound.so \
     vendor/samsung/logan/proprietary/lib/libsavscmn.so:system/lib/libsavscmn.so \
 	vendor/samsung/logan/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so \
@@ -105,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/lib/libcontainers.so:system/lib/libcontainers.so \
     vendor/samsung/logan/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
     vendor/samsung/logan/proprietary/lib/libril.so:system/lib/libril.so \
+	vendor/samsung/logan/proprietary/lib/libreference-ril.so:system/lib/libreference-ril.so \
     vendor/samsung/logan/proprietary/lib/librpc.so:system/lib/librpc.so \
     vendor/samsung/logan/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
     vendor/samsung/logan/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
@@ -115,7 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/logan/proprietary/lib/libsoundalive.so:system/lib/libsoundalive.so \
     vendor/samsung/logan/proprietary/lib/libSoundAlive_VSP_ver312a.so:system/lib/libSoundAlive_VSP_ver312a.so \
     vendor/samsung/logan/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
-    vendor/samsung/logan/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
     vendor/samsung/logan/proprietary/lib/libjpeg_turbo.so:system/lib/libjpeg_turbo.so \
     vendor/samsung/logan/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
     vendor/samsung/logan/proprietary/lib/libsthmb.so:system/lib/libsthmb.so \
@@ -137,6 +114,62 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/logan/proprietary/lib/libisp3.so:system/lib/libisp3.so \
 	vendor/samsung/logan/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
     vendor/samsung/logan/proprietary/lib/libV3D_driver.so:system/lib/libV3D_driver.so \
+	vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vc1.hw.decoder.so:system/lib/libOMX.brcm.video.vc1.hw.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.decoder.so:system/lib/libOMX.brcm.audio.aac.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrnb.decoder.so:system/lib/libOMX.brcm.audio.amrnb.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrnb.encoder.so:system/lib/libOMX.brcm.audio.amrnb.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrwb.decoder.so:system/lib/libOMX.brcm.audio.amrwb.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.amrwb.encoder.so:system/lib/libOMX.brcm.audio.amrwb.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.mp3.decoder.so:system/lib/libOMX.brcm.audio.mp3.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.mp3.encoder.so:system/lib/libOMX.brcm.audio.mp3.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.dummy.decoder.so:system/lib/libOMX.brcm.video.dummy.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.dummy.encoder.so:system/lib/libOMX.brcm.video.dummy.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h263.decoder.so:system/lib/libOMX.brcm.video.h263.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h263.encoder.so:system/lib/libOMX.brcm.video.h263.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.decoder.so:system/lib/libOMX.brcm.video.h264.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.encoder.so:system/lib/libOMX.brcm.video.h264.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.hw.decoder.so:system/lib/libOMX.brcm.video.h264.hw.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.decoder.so:system/lib/libOMX.brcm.video.mpeg4.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.encoder.so:system/lib/libOMX.brcm.video.mpeg4.encoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.mpeg4.hw.decoder.so:system/lib/libOMX.brcm.video.mpeg4.hw.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libOMX.brcm.video.vpx.decoder.so:system/lib/libOMX.brcm.video.vpx.decoder.so \
+    vendor/samsung/logan/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
+    vendor/samsung/logan/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
+	vendor/samsung/logan/proprietary/lib/libwmv_dec_mp.so:system/lib/libwmv_dec_mp.so \
+	vendor/samsung/logan/proprietary/lib/libwmv_dec_sp.so:system/lib/libwmv_dec_sp.so \
+	vendor/samsung/logan/proprietary/lib/libtiming.so:system/lib/libtiming.so \
+	vendor/samsung/logan/proprietary/lib/libvpx_dec.so:system/lib/libvpx_dec.so \
+	vendor/samsung/logan/proprietary/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
+	vendor/samsung/logan/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so \
+	vendor/samsung/logan/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
+	vendor/samsung/logan/proprietary/lib/libsomxcmn.so:system/lib/libsomxcmn.so \
+	vendor/samsung/logan/proprietary/lib/libsomxcore.so:system/lib/libsomxcore.so \
+	vendor/samsung/logan/proprietary/lib/libsomxflacd.so:system/lib/libsomxflacd.so \
+	vendor/samsung/logan/proprietary/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
+	vendor/samsung/logan/proprietary/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
+	vendor/samsung/logan/proprietary/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
+	vendor/samsung/logan/proprietary/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
+	vendor/samsung/logan/proprietary/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
+	vendor/samsung/logan/proprietary/lib/libsomxwmv7d.so:system/lib/libsomxwmv7d.so \
+	vendor/samsung/logan/proprietary/lib/libsomxwmv8d.so:system/lib/libsomxwmv8d.so \
+	vendor/samsung/logan/proprietary/lib/libh263_dec_p3.so:system/lib/libh263_dec_p3.so \
+	vendor/samsung/logan/proprietary/lib/libh263_dummy_enc.so:system/lib/libh263_dummy_enc.so \
+	vendor/samsung/logan/proprietary/lib/libh263_enc_p3.so:system/lib/libh263_enc_p3.so \
+	vendor/samsung/logan/proprietary/lib/libh264_dec_bp.so:system/lib/libh264_dec_bp.so \
+	vendor/samsung/logan/proprietary/lib/libh264_dec_hp.so:system/lib/libh264_dec_hp.so \
+	vendor/samsung/logan/proprietary/lib/libh264_dummy_enc.so:system/lib/libh264_dummy_enc.so \
+	vendor/samsung/logan/proprietary/lib/libh264_enc_bp.so:system/lib/libh264_enc_bp.so \
+	vendor/samsung/logan/proprietary/lib/libhwcodec.so:system/lib/libhwcodec.so \
+	vendor/samsung/logan/proprietary/lib/libmp3_dec_dummy.so:system/lib/libmp3_dec_dummy.so \
+	vendor/samsung/logan/proprietary/lib/libmpeg4_dec_asp.so:system/lib/libmpeg4_dec_asp.so \
+	vendor/samsung/logan/proprietary/lib/libmpeg4_dummy_enc.so:system/lib/libmpeg4_dummy_enc.so \
+	vendor/samsung/logan/proprietary/lib/libmpeg4_enc_sp.so:system/lib/libmpeg4_enc_sp.so \
+	vendor/samsung/logan/proprietary/lib/libmpeg4_fake_dec.so:system/lib/libmpeg4_fake_dec.so \
+	vendor/samsung/logan/proprietary/lib/libcodec_util.so:system/lib/libcodec_util.so \
+	vendor/samsung/logan/proprietary/lib/libaac_enc_dummy.so:system/lib/libaac_enc_dummy.so \
 	vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
     vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
     vendor/samsung/logan/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
