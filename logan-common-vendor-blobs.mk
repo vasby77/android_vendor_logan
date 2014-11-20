@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/lib/hw/lights.hawaii.so\
 	$(LOCAL_PATH)/proprietary/vendor/lib/hw/power.hawaii.so:system/lib/hw/power.hawaii.so
 	 
-PRODUCT_COPY_FILES += \	 
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
 	$(LOCAL_PATH)/proprietary/bin/BCM4330B1_002.001.003.0967.1173.hcd:system/bin/BCM4330B1_002.001.003.0967.1173.hcd \
 	$(LOCAL_PATH)/proprietary/bin/sensord:system/bin/sensord \
@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
     $(LOCAL_PATH)/proprietary/bin/wlandutservice:system/bin/wlandutservice
 	
-PRODUCT_COPY_FILES += \	
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/gps/glconfig.xml:system/etc/gps/glconfig.xml \
 	$(LOCAL_PATH)/proprietary/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
     $(LOCAL_PATH)/proprietary/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
