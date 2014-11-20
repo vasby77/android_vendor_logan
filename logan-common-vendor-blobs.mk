@@ -16,8 +16,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
-	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/lib/hw/lights.hawaii.so\
-	$(LOCAL_PATH)/proprietary/vendor/lib/hw/power.hawaii.so:system/lib/hw/power.hawaii.so
+	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
+	$(LOCAL_PATH)/proprietary/vendor/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so
 	 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
