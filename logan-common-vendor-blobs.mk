@@ -194,6 +194,48 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libmp3_enc_dummy.so:system/lib/libmp3_enc_dummy.so \
     $(LOCAL_PATH)/proprietary/lib/libmpeg4_enc_sp.so:system/lib/libmpeg4_enc_sp.so \
     $(LOCAL_PATH)/proprietary/lib/libtiming.so:system/lib/libtiming.so
+	
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+	$(LOCAL_PATH)/proprietary/lib/libarcsoft_blink_detection.so:system/lib/libarcsoft_blink_detection.so \
+	$(LOCAL_PATH)/proprietary/lib/libarcsoft_detection_base.so:system/lib/libarcsoft_detection_base.so \
+	$(LOCAL_PATH)/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so \
+	$(LOCAL_PATH)/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
+	$(LOCAL_PATH)/proprietary/lib/libarcsoft_smile_detection.so:system/lib/libarcsoft_smile_detection.so \
+	$(LOCAL_PATH)/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
+	$(LOCAL_PATH)/proprietary/lib/libexifa.so:system/lib/libexifa.so \
+	$(LOCAL_PATH)/proprietary/lib/libfacerecognition.so:system/lib/libfacerecognition.so \
+	$(LOCAL_PATH)/proprietary/lib/libfacetracker.so:system/lib/libfacetracker.so \
+	$(LOCAL_PATH)/proprietary/lib/libgs.so:system/lib/libgs.so \
+	$(LOCAL_PATH)/proprietary/lib/libimage.so:system/lib/libimage.so \
+	$(LOCAL_PATH)/proprietary/lib/libimgtops.so:system/lib/libimgtops.so \
+	$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so \
+	$(LOCAL_PATH)/proprietary/lib/libnmsp_vocoder_speex.so:system/lib/libnmsp_vocoder_speex.so \
+	$(LOCAL_PATH)/proprietary/lib/libnvaccessor_fb.so:system/lib/libnvaccessor_fb.so \
+	$(LOCAL_PATH)/proprietary/lib/libomadrm.so:system/lib/libomadrm.so \
+	$(LOCAL_PATH)/proprietary/lib/libquramagifencoder.so:system/lib/libquramagifencoder.so \
+	$(LOCAL_PATH)/proprietary/lib/libquramimagecodec.so:system/lib/libquramimagecodec.so \
+	$(LOCAL_PATH)/proprietary/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
+	$(LOCAL_PATH)/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so \
+	$(LOCAL_PATH)/proprietary/lib/libsavsac.so:system/lib/libsavsac.so \
+	$(LOCAL_PATH)/proprietary/lib/libsavsff.so:system/lib/libsavsff.so \
+	$(LOCAL_PATH)/proprietary/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
+	$(LOCAL_PATH)/proprietary/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextaac.so:system/lib/libsfextaac.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextavi.so:system/lib/libsfextavi.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextcmn.so:system/lib/libsfextcmn.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextcp.so:system/lib/libsfextcp.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextflac.so:system/lib/libsfextflac.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextflv.so:system/lib/libsfextflv.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextmkv.so:system/lib/libsfextmkv.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextrmf.so:system/lib/libsfextrmf.so \
+	$(LOCAL_PATH)/proprietary/lib/libsfextwmf.so:system/lib/libsfextwmf.so \
+	$(LOCAL_PATH)/proprietary/lib/libsharevia.so:system/lib/libsharevia.so \
+	$(LOCAL_PATH)/proprietary/lib/libsharevia_jni.so:system/lib/libsharevia_jni.so \
+	$(LOCAL_PATH)/proprietary/lib/libui3d-jni.so:system/lib/libui3d-jni.so \
+	$(LOCAL_PATH)/proprietary/lib/libvt_codec.so:system/lib/libvt_codec.so \
+	$(LOCAL_PATH)/proprietary/lib/libvtmanager.so:system/lib/libvtmanager.so \
+	$(LOCAL_PATH)/proprietary/lib/libvtstack.so:system/lib/libvtstack.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
