@@ -1,23 +1,22 @@
 LOCAL_PATH := vendor/samsung/logan
 
 #$(LOCAL_PATH)/proprietary/etc/audio_policy.conf:system/etc/audio_policy.conf \
+#$(LOCAL_PATH)/proprietary/lib/libvwengine.so:system/lib/libvwengine.so \
+#$(LOCAL_PATH)/proprietary/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
+#$(LOCAL_PATH)/proprietary/lib/libsamsungtts.so:system/lib/libsamsungtts.so
+#$(LOCAL_PATH)/proprietary/lib/liblvvefs.so:system/lib/liblvvefs.so \
+#$(LOCAL_PATH)/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
+#$(LOCAL_PATH)/proprietary/lib/libdeblock.so:system/lib/libdeblock.so \
+#$(LOCAL_PATH)/proprietary/bin/p2p_supplicant:system/bin/p2p_supplicant \
+#$(LOCAL_PATH)/proprietary/bin/usbdev_mode:system/bin/usbdev_mode \
+#$(LOCAL_PATH)/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
+#$(LOCAL_PATH)/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
+#$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+#$(LOCAL_PATH)/proprietary/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
+#$(LOCAL_PATH)/proprietary/lib/libsharevia.so:system/lib/libsharevia.so \
+#$(LOCAL_PATH)/proprietary/lib/libsharevia_jni.so:system/lib/libsharevia_jni.so \
+#$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
 
-PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.hawaii.so:system/lib/hw/audio.primary.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/gps.hawaii.so:system/lib/hw/gps.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
-	$(LOCAL_PATH)/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
-	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
-	$(LOCAL_PATH)/proprietary/vendor/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so
-	 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
 	$(LOCAL_PATH)/proprietary/bin/BCM4330B1_002.001.003.0967.1173.hcd:system/bin/BCM4330B1_002.001.003.0967.1173.hcd \
@@ -36,11 +35,24 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/mttlogger:system/bin/mttlogger \
     $(LOCAL_PATH)/proprietary/bin/npsmobex:system/bin/npsmobex \
 	$(LOCAL_PATH)/proprietary/bin/mfgloader:system/bin/mfgloader \
-    $(LOCAL_PATH)/proprietary/bin/p2p_supplicant:system/bin/p2p_supplicant \
-    $(LOCAL_PATH)/proprietary/bin/usbdev_mode:system/bin/usbdev_mode \
     $(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
     $(LOCAL_PATH)/proprietary/bin/wlandutservice:system/bin/wlandutservice
-	
+
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.hawaii.so:system/lib/hw/audio.primary.hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/gps.hawaii.so:system/lib/hw/gps.hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
+	$(LOCAL_PATH)/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
+	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
+	$(LOCAL_PATH)/proprietary/vendor/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so
+	 	
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
 	$(LOCAL_PATH)/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
@@ -100,8 +112,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/lib_SamsungRec_V01006.so:system/lib/lib_SamsungRec_V01006.so \
     $(LOCAL_PATH)/proprietary/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
     $(LOCAL_PATH)/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v04004.so:system/lib/lib_Samsung_SB_AM_for_ICS_v04004.so \
-    $(LOCAL_PATH)/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
-    $(LOCAL_PATH)/proprietary/lib/libsamsungtts.so:system/lib/libsamsungtts.so
+    $(LOCAL_PATH)/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libatlog.so:system/lib/libatlog.so \
@@ -127,15 +138,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
 	$(LOCAL_PATH)/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so \
 	$(LOCAL_PATH)/proprietary/lib/libcontainers.so:system/lib/libcontainers.so \
-    $(LOCAL_PATH)/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
-    $(LOCAL_PATH)/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
     $(LOCAL_PATH)/proprietary/lib/libsec_devenc.so:system/lib/libsec_devenc.so \
     $(LOCAL_PATH)/proprietary/lib/libsec_ecryptfs.so:system/lib/libsec_ecryptfs.so \
     $(LOCAL_PATH)/proprietary/lib/libsecface.so:system/lib/libsecface.so \
     $(LOCAL_PATH)/proprietary/lib/libsecfips.so:system/lib/libsecfips.so \
     $(LOCAL_PATH)/proprietary/lib/libsecimaging.so:system/lib/libsecimaging.so \
     $(LOCAL_PATH)/proprietary/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
-    $(LOCAL_PATH)/proprietary/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
     $(LOCAL_PATH)/proprietary/lib/libsec_km.so:system/lib/libsec_km.so \
     $(LOCAL_PATH)/proprietary/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so \
     $(LOCAL_PATH)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
@@ -151,11 +159,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libcapi2.so:system/lib/libcapi2.so \
     $(LOCAL_PATH)/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so \
     $(LOCAL_PATH)/proprietary/lib/libFraunhoferAAC.so:system/lib/libFraunhoferAAC.so \
-    $(LOCAL_PATH)/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
     $(LOCAL_PATH)/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
     $(LOCAL_PATH)/proprietary/lib/libISP.so:system/lib/libISP.so \
     $(LOCAL_PATH)/proprietary/lib/libisp2.so:system/lib/libisp2.so \
-    $(LOCAL_PATH)/proprietary/lib/liblvvefs.so:system/lib/liblvvefs.so \
     $(LOCAL_PATH)/proprietary/lib/libsoc.so:system/lib/libsoc.so \
     $(LOCAL_PATH)/proprietary/lib/libsoundalive.so:system/lib/libsoundalive.so \
     $(LOCAL_PATH)/proprietary/lib/libSoundAlive_VSP_ver312a.so:system/lib/libSoundAlive_VSP_ver312a.so \
@@ -173,7 +179,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libVCOS.so:system/lib/libVCOS.so \
     $(LOCAL_PATH)/proprietary/lib/libvpx_dec.so:system/lib/libvpx_dec.so \
     $(LOCAL_PATH)/proprietary/lib/libvtqinit.so:system/lib/libvtqinit.so \
-    $(LOCAL_PATH)/proprietary/lib/libvwengine.so:system/lib/libvwengine.so \
     $(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so \
     $(LOCAL_PATH)/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
     $(LOCAL_PATH)/proprietary/lib/lib_SoundAlive_V01013n.so:system/lib/lib_SoundAlive_V01013n.so \
@@ -186,7 +191,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libmpeg4_dummy_enc.so:system/lib/libmpeg4_dummy_enc.so \
     $(LOCAL_PATH)/proprietary/lib/libmpeg4_fake_dec.so:system/lib/libmpeg4_fake_dec.so \
     $(LOCAL_PATH)/proprietary/lib/libcodec_util.so:system/lib/libcodec_util.so \
-    $(LOCAL_PATH)/proprietary/lib/libdeblock.so:system/lib/libdeblock.so \
     $(LOCAL_PATH)/proprietary/lib/libh263_dummy_enc.so:system/lib/libh263_dummy_enc.so \
     $(LOCAL_PATH)/proprietary/lib/libh264_dec_hp.so:system/lib/libh264_dec_hp.so \
     $(LOCAL_PATH)/proprietary/lib/libh264_dummy_enc.so:system/lib/libh264_dummy_enc.so \
@@ -196,7 +200,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libtiming.so:system/lib/libtiming.so
 	
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
 	$(LOCAL_PATH)/proprietary/lib/libarcsoft_blink_detection.so:system/lib/libarcsoft_blink_detection.so \
 	$(LOCAL_PATH)/proprietary/lib/libarcsoft_detection_base.so:system/lib/libarcsoft_detection_base.so \
 	$(LOCAL_PATH)/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so \
@@ -220,7 +223,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsavsac.so:system/lib/libsavsac.so \
 	$(LOCAL_PATH)/proprietary/lib/libsavsff.so:system/lib/libsavsff.so \
 	$(LOCAL_PATH)/proprietary/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
-	$(LOCAL_PATH)/proprietary/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextaac.so:system/lib/libsfextaac.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextavi.so:system/lib/libsfextavi.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextcmn.so:system/lib/libsfextcmn.so \
@@ -230,8 +232,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsfextmkv.so:system/lib/libsfextmkv.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextrmf.so:system/lib/libsfextrmf.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextwmf.so:system/lib/libsfextwmf.so \
-	$(LOCAL_PATH)/proprietary/lib/libsharevia.so:system/lib/libsharevia.so \
-	$(LOCAL_PATH)/proprietary/lib/libsharevia_jni.so:system/lib/libsharevia_jni.so \
 	$(LOCAL_PATH)/proprietary/lib/libui3d-jni.so:system/lib/libui3d-jni.so \
 	$(LOCAL_PATH)/proprietary/lib/libvt_codec.so:system/lib/libvt_codec.so \
 	$(LOCAL_PATH)/proprietary/lib/libvtmanager.so:system/lib/libvtmanager.so \
