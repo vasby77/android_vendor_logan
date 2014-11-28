@@ -9,10 +9,6 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libdeblock.so:system/lib/libdeblock.so \
 #$(LOCAL_PATH)/proprietary/bin/p2p_supplicant:system/bin/p2p_supplicant \
 #$(LOCAL_PATH)/proprietary/bin/usbdev_mode:system/bin/usbdev_mode \
-#$(LOCAL_PATH)/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
-#$(LOCAL_PATH)/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
-#$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-#$(LOCAL_PATH)/proprietary/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
 #$(LOCAL_PATH)/proprietary/lib/libsharevia.so:system/lib/libsharevia.so \
 #$(LOCAL_PATH)/proprietary/lib/libsharevia_jni.so:system/lib/libsharevia_jni.so \
 #$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
@@ -20,25 +16,23 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libsec_ecryptfs.so:system/lib/libsec_ecryptfs.so \
 #$(LOCAL_PATH)/proprietary/lib/libsecface.so:system/lib/libsecface.so \
 #$(LOCAL_PATH)/proprietary/lib/libsecfips.so:system/lib/libsecfips.so \
-#$(LOCAL_PATH)/proprietary/lib/libsecimaging.so:system/lib/libsecimaging.so \
-#$(LOCAL_PATH)/proprietary/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
 #$(LOCAL_PATH)/proprietary/lib/libsec_km.so:system/lib/libsec_km.so \
-#$(LOCAL_PATH)/proprietary/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so \
 #$(LOCAL_PATH)/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
-#$(LOCAL_PATH)/proprietary/lib/libFraunhoferAAC.so:system/lib/libFraunhoferAAC.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_blink_detection.so:system/lib/libarcsoft_blink_detection.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_detection_base.so:system/lib/libarcsoft_detection_base.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_smile_detection.so:system/lib/libarcsoft_smile_detection.so \
-#$(LOCAL_PATH)/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
+#$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 #$(LOCAL_PATH)/proprietary/lib/libexifa.so:system/lib/libexifa.so \
+#$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so
+
+
 #$(LOCAL_PATH)/proprietary/lib/libfacerecognition.so:system/lib/libfacerecognition.so \
 #$(LOCAL_PATH)/proprietary/lib/libfacetracker.so:system/lib/libfacetracker.so \
 #$(LOCAL_PATH)/proprietary/lib/libgs.so:system/lib/libgs.so \
 #$(LOCAL_PATH)/proprietary/lib/libimage.so:system/lib/libimage.so \
 #$(LOCAL_PATH)/proprietary/lib/libimgtops.so:system/lib/libimgtops.so \
-#$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so \
 #$(LOCAL_PATH)/proprietary/lib/libnmsp_vocoder_speex.so:system/lib/libnmsp_vocoder_speex.so \
 #$(LOCAL_PATH)/proprietary/lib/libnvaccessor_fb.so:system/lib/libnvaccessor_fb.so \
 #$(LOCAL_PATH)/proprietary/lib/libomadrm.so:system/lib/libomadrm.so \
@@ -152,7 +146,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsfextflv.so:system/lib/libsfextflv.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextmkv.so:system/lib/libsfextmkv.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextrmf.so:system/lib/libsfextrmf.so \
-	$(LOCAL_PATH)/proprietary/lib/libsfextwmf.so:system/lib/libsfextwmf.so
+	$(LOCAL_PATH)/proprietary/lib/libsfextwmf.so:system/lib/libsfextwmf.so \
+	$(LOCAL_PATH)/proprietary/lib/libFraunhoferAAC.so:system/lib/libFraunhoferAAC.so
   
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
@@ -225,7 +220,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsoundalive.so:system/lib/libsoundalive.so \
 	$(LOCAL_PATH)/proprietary/lib/libSoundAlive_VSP_ver312a.so:system/lib/libSoundAlive_VSP_ver312a.so \
 	$(LOCAL_PATH)/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 	$(LOCAL_PATH)/proprietary/lib/libjpeg_turbo.so:system/lib/libjpeg_turbo.so \
 	$(LOCAL_PATH)/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
 	$(LOCAL_PATH)/proprietary/lib/librpc.so:system/lib/librpc.so \
@@ -246,4 +240,42 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libisp2.so:system/lib/libisp2.so \
 	$(LOCAL_PATH)/proprietary/lib/libisp3.so:system/lib/libisp3.so \
 	$(LOCAL_PATH)/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so
+	
+PRODUCT_COPY_FILES += \	
+	$(LOCAL_PATH)/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
+	$(LOCAL_PATH)/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
+	$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+	$(LOCAL_PATH)/proprietary/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
+	$(LOCAL_PATH)/proprietary/lib/libsecimaging.so:system/lib/libsecimaging.so \
+	$(LOCAL_PATH)/proprietary/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
+	$(LOCAL_PATH)/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
+	$(LOCAL_PATH)/proprietary/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so
+	
+PRODUCT_COPY_FILES += \	
+	$(LOCAL_PATH)/proprietary/bin/playlpm:system/bin/playlpm \
+	$(LOCAL_PATH)/proprietary/bin/lpmkey:system/bin/lpmkey \
+	$(LOCAL_PATH)/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_10.qmg:system/media/battery_charging_10.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_15.qmg:system/media/battery_charging_15.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_20.qmg:system/media/battery_charging_20.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_25.qmg:system/media/battery_charging_25.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_30.qmg:system/media/battery_charging_30.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_35.qmg:system/media/battery_charging_35.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_40.qmg:system/media/battery_charging_40.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_45.qmg:system/media/battery_charging_45.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_50.qmg:system/media/battery_charging_50.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_55.qmg:system/media/battery_charging_55.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_60.qmg:system/media/battery_charging_60.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_65.qmg:system/media/battery_charging_65.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_70.qmg:system/media/battery_charging_70.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_75.qmg:system/media/battery_charging_75.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_80.qmg:system/media/battery_charging_80.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_85.qmg:system/media/battery_charging_85.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_90.qmg:system/media/battery_charging_90.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_95.qmg:system/media/battery_charging_95.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
+	$(LOCAL_PATH)/proprietary/media/battery_error.qmg:system/media/battery_error.qmg \
+	$(LOCAL_PATH)/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg 
+	
 	 
