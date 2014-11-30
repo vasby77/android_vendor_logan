@@ -241,7 +241,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libisp3.so:system/lib/libisp3.so \
 	$(LOCAL_PATH)/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so
 	
-PRODUCT_COPY_FILES += \	
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
 	$(LOCAL_PATH)/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
 	$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
@@ -251,7 +251,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
 	$(LOCAL_PATH)/proprietary/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so
 	
-PRODUCT_COPY_FILES += \	
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/playlpm:system/bin/playlpm \
 	$(LOCAL_PATH)/proprietary/bin/lpmkey:system/bin/lpmkey \
 	$(LOCAL_PATH)/proprietary/media/battery_batteryerror.qmg:system/media/battery_batteryerror.qmg \
