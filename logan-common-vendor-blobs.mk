@@ -23,7 +23,6 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_smile_detection.so:system/lib/libarcsoft_smile_detection.so \
-#$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 #$(LOCAL_PATH)/proprietary/lib/libexifa.so:system/lib/libexifa.so \
 #$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so
 
@@ -147,6 +146,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsfextmkv.so:system/lib/libsfextmkv.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextrmf.so:system/lib/libsfextrmf.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextwmf.so:system/lib/libsfextwmf.so \
+	$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 	$(LOCAL_PATH)/proprietary/lib/libFraunhoferAAC.so:system/lib/libFraunhoferAAC.so
   
 PRODUCT_COPY_FILES += \
