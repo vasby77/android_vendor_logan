@@ -75,7 +75,20 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
 #$(LOCAL_PATH)/proprietary/bin/atx:system/bin/atx \
 #$(LOCAL_PATH)/proprietary/bin/atxd:system/bin/atxd \
-$(LOCAL_PATH)/proprietary/bin/npsmobex:system/bin/npsmobex \
+#$(LOCAL_PATH)/proprietary/bin/npsmobex:system/bin/npsmobex \
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_mp3dec.so:system/lib/libstagefright_soft_mp3dec.so
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_amrnb_common.so:system/lib/libstagefright_amrnb_common.so \
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_amrdec.so:system/lib/libstagefright_soft_amrdec.so \
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_amrnbenc.so:system/lib/libstagefright_soft_amrnbenc.so \
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_amrwbenc.so:system/lib/libstagefright_soft_amrwbenc.so
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_aacdec.so:system/lib/libstagefright_soft_aacdec.so \
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_aacenc.so:system/lib/libstagefright_soft_aacenc.so
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_mpeg4dec.so:system/lib/libstagefright_soft_mpeg4dec.so \
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_mpeg4enc.so:system/lib/libstagefright_soft_mpeg4enc.so
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264dec.so:system/lib/libstagefright_soft_h264dec.so \
+#$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264enc.so:system/lib/libstagefright_soft_h264enc.so
+#$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/atrace:system/bin/atrace \
@@ -102,8 +115,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libmp3_enc_dummy.so:system/lib/libmp3_enc_dummy.so \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.mp3.decoder.so:system/lib/libOMX.brcm.audio.mp3.decoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.mp3.encoder.so:system/lib/libOMX.brcm.audio.mp3.encoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_mp3dec.so:system/lib/libstagefright_soft_mp3dec.so
+	$(LOCAL_PATH)/proprietary/lib/libsomxmp3d.so:system/lib/libsomxmp3d.so
 	
 # amr 
 PRODUCT_COPY_FILES += \
@@ -117,11 +129,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.amrwb.encoder.so:system/lib/libOMX.brcm.audio.amrwb.encoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libsAMRNB.so:system/lib/libsAMRNB.so \
 	$(LOCAL_PATH)/proprietary/lib/libsAMRWB.so:system/lib/libsAMRWB.so \
-	$(LOCAL_PATH)/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_amrnb_common.so:system/lib/libstagefright_amrnb_common.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_amrdec.so:system/lib/libstagefright_soft_amrdec.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_amrnbenc.so:system/lib/libstagefright_soft_amrnbenc.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_amrwbenc.so:system/lib/libstagefright_soft_amrwbenc.so
+	$(LOCAL_PATH)/proprietary/lib/libsomxamrd.so:system/lib/libsomxamrd.so
 	
 # aac 
 PRODUCT_COPY_FILES += \
@@ -134,10 +142,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.aac.encoder.so:system/lib/libOMX.brcm.audio.aac.encoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libsfextaac.so:system/lib/libsfextaac.so \
 	$(LOCAL_PATH)/proprietary/lib/libsomxaacd.so:system/lib/libsomxaacd.so \
-	$(LOCAL_PATH)/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_aacdec.so:system/lib/libstagefright_soft_aacdec.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_aacenc.so:system/lib/libstagefright_soft_aacenc.so
-
+	$(LOCAL_PATH)/proprietary/lib/libsomxaace.so:system/lib/libsomxaace.so
+	
 # mpeg4
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libmpeg4_dec_asp.so:system/lib/libmpeg4_dec_asp.so \
@@ -146,9 +152,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libmpeg4_fake_dec.so:system/lib/libmpeg4_fake_dec.so \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.mpeg4.decoder.so:system/lib/libOMX.brcm.video.mpeg4.decoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.mpeg4.encoder.so:system/lib/libOMX.brcm.video.mpeg4.encoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.mpeg4.hw.decoder.so:system/lib/libOMX.brcm.video.mpeg4.hw.decoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_mpeg4dec.so:system/lib/libstagefright_soft_mpeg4dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_mpeg4enc.so:system/lib/libstagefright_soft_mpeg4enc.so
+	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.mpeg4.hw.decoder.so:system/lib/libOMX.brcm.video.mpeg4.hw.decoder.so
 	
 # h264
 PRODUCT_COPY_FILES += \
@@ -159,9 +163,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.decoder.so:system/lib/libOMX.brcm.video.h264.decoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.encoder.so:system/lib/libOMX.brcm.video.h264.encoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.decoder.so:system/lib/libOMX.brcm.video.h264.hw.decoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264dec.so:system/lib/libstagefright_soft_h264dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264enc.so:system/lib/libstagefright_soft_h264enc.so
+	$(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.h264.hw.encoder.so:system/lib/libOMX.brcm.video.h264.hw.encoder.so
 	
 # h263
 PRODUCT_COPY_FILES += \
@@ -181,7 +183,7 @@ PRODUCT_COPY_FILES += \
 # wma	
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-    $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so \
+    $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so
 
 # other	
 PRODUCT_COPY_FILES += \	
@@ -195,7 +197,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.video.vpx.decoder.so:system/lib/libOMX.brcm.video.vpx.decoder.so \
 	$(LOCAL_PATH)/proprietary/lib/libcodec_util.so:system/lib/libcodec_util.so \
     $(LOCAL_PATH)/proprietary/lib/libhwcodec.so:system/lib/libhwcodec.so \
-	$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 	$(LOCAL_PATH)/proprietary/lib/libsomxvp8d.so:system/lib/libsomxvp8d.so \
 	$(LOCAL_PATH)/proprietary/lib/libsomxsr263d.so:system/lib/libsomxsr263d.so \
 	$(LOCAL_PATH)/proprietary/lib/libsomxmp43d.so:system/lib/libsomxmp43d.so \
@@ -214,7 +215,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/gps.hawaii.so:system/lib/hw/gps.hawaii.so \
     $(LOCAL_PATH)/proprietary/lib/hw/gralloc.hawaii.so:system/lib/hw/gralloc.hawaii.so \
     $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
 	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
@@ -242,6 +243,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
+	$(LOCAL_PATH)/proprietary/lib/libbinder.so:system/lib/libbinder.so \
+	$(LOCAL_PATH)/proprietary/lib/libutils.so:system/lib/libutils.so \
 	$(LOCAL_PATH)/proprietary/lib/libv3d.so:system/lib/libv3d.so \
 	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni:system/lib/libvcdecoder_jni \
     $(LOCAL_PATH)/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
