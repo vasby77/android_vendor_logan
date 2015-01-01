@@ -248,7 +248,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libbinder.so:system/lib/libbinder.so \
 	$(LOCAL_PATH)/proprietary/lib/libutils.so:system/lib/libutils.so \
 	$(LOCAL_PATH)/proprietary/lib/libv3d.so:system/lib/libv3d.so \
-	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni:system/lib/libvcdecoder_jni \
+	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
     $(LOCAL_PATH)/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
     $(LOCAL_PATH)/proprietary/lib/libV3D_driver.so:system/lib/libV3D_driver.so \
 	$(LOCAL_PATH)/proprietary/lib/libasound.so:system/lib/libasound.so \
