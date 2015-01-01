@@ -88,6 +88,8 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264dec.so:system/lib/libstagefright_soft_h264dec.so \
 #$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264enc.so:system/lib/libstagefright_soft_h264enc.so
 #$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+#$(LOCAL_PATH)/proprietary/bin/immvibed:system/bin/immvibed \
+#$(LOCAL_PATH)/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
 
 
 PRODUCT_COPY_FILES += \
@@ -97,7 +99,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/glgps:system/bin/glgps \
     $(LOCAL_PATH)/proprietary/bin/gps.cer:system/bin/gps.cer \
     $(LOCAL_PATH)/proprietary/bin/gpslogd:system/bin/gpslogd \
-	$(LOCAL_PATH)/proprietary/bin/immvibed:system/bin/immvibed \
     $(LOCAL_PATH)/proprietary/bin/macloader:system/bin/macloader \
 	$(LOCAL_PATH)/proprietary/bin/mttlogger:system/bin/mttlogger \
     $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
@@ -269,7 +270,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libbrcmparser.so:system/lib/libbrcmparser.so \
 	$(LOCAL_PATH)/proprietary/lib/libcapi2.so:system/lib/libcapi2.so \
 	$(LOCAL_PATH)/proprietary/lib/libcontainers.so:system/lib/libcontainers.so \
-	$(LOCAL_PATH)/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
 	$(LOCAL_PATH)/proprietary/lib/libril.so:system/lib/libril.so \
 	$(LOCAL_PATH)/proprietary/lib/librpc.so:system/lib/librpc.so \
 	$(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
