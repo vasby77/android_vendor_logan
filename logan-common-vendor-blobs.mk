@@ -186,7 +186,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so
 
 # other	
-PRODUCT_COPY_FILES += \	
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libvpx_dec.so:system/lib/libvpx_dec.so \
 	$(LOCAL_PATH)/proprietary/lib/libtiming.so:system/lib/libtiming.so \
 	$(LOCAL_PATH)/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
