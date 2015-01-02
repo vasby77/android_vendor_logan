@@ -90,6 +90,9 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 #$(LOCAL_PATH)/proprietary/bin/immvibed:system/bin/immvibed \
 #$(LOCAL_PATH)/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
+#$(LOCAL_PATH)/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
+#$(LOCAL_PATH)/proprietary/lib/libbinder.so:system/lib/libbinder.so \
+#$(LOCAL_PATH)/proprietary/lib/libutils.so:system/lib/libutils.so \
 
 
 PRODUCT_COPY_FILES += \
@@ -186,7 +189,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
     $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so
 
-# other	
+# other
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libvpx_dec.so:system/lib/libvpx_dec.so \
 	$(LOCAL_PATH)/proprietary/lib/libtiming.so:system/lib/libtiming.so \
@@ -244,9 +247,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
-	$(LOCAL_PATH)/proprietary/lib/libbinder.so:system/lib/libbinder.so \
-	$(LOCAL_PATH)/proprietary/lib/libutils.so:system/lib/libutils.so \
 	$(LOCAL_PATH)/proprietary/lib/libv3d.so:system/lib/libv3d.so \
 	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
     $(LOCAL_PATH)/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
