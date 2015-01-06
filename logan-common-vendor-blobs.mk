@@ -38,6 +38,7 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libsavsac.so:system/lib/libsavsac.so \
 #$(LOCAL_PATH)/proprietary/lib/libsavsff.so:system/lib/libsavsff.so \
 #$(LOCAL_PATH)/proprietary/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
+#$(LOCAL_PATH)/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
 #$(LOCAL_PATH)/proprietary/lib/libsfextavi.so:system/lib/libsfextavi.so \
 #$(LOCAL_PATH)/proprietary/lib/libsfextcmn.so:system/lib/libsfextcmn.so \
 #$(LOCAL_PATH)/proprietary/lib/libsfextcp.so:system/lib/libsfextcp.so \
@@ -93,6 +94,9 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libbinder.so:system/lib/libbinder.so \
 #$(LOCAL_PATH)/proprietary/lib/libutils.so:system/lib/libutils.so \
 #$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
+#$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
+#$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
+#$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
 
 
 PRODUCT_COPY_FILES += \
@@ -106,7 +110,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/mttlogger:system/bin/mttlogger \
     $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/proprietary/bin/mfgloader:system/bin/mfgloader \
-	$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
 	$(LOCAL_PATH)/proprietary/bin/wlandutservice:system/bin/wlandutservice \
 	$(LOCAL_PATH)/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
 	$(LOCAL_PATH)/proprietary/bin/sensord:system/bin/sensord
@@ -242,7 +245,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/asound.conf:system/etc/asound.conf \
     $(LOCAL_PATH)/proprietary/etc/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/proprietary/etc/srm.bin:system/etc/srm.bin \
-	$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
@@ -284,7 +286,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
 	$(LOCAL_PATH)/proprietary/lib/librpc.so:system/lib/librpc.so \
 	$(LOCAL_PATH)/proprietary/lib/libsthmb.so:system/lib/libsthmb.so \
-	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
 	$(LOCAL_PATH)/proprietary/lib/libVCOS.so:system/lib/libVCOS.so \
 	$(LOCAL_PATH)/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
 	$(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so \
@@ -293,7 +294,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libVCE_imageconv.so:system/lib/libVCE_imageconv.so \
     $(LOCAL_PATH)/proprietary/lib/libVCE_vtq.so:system/lib/libVCE_vtq.so \
 	$(LOCAL_PATH)/proprietary/lib/libWVStreamControlAPI_L3.so:system/lib/libWVStreamControlAPI_L3.so \
-	$(LOCAL_PATH)/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
 	$(LOCAL_PATH)/proprietary/lib/libkeystore_client.so:system/lib/libkeystore_client.so \
 	$(LOCAL_PATH)/proprietary/lib/libcontrolcsc.so:system/lib/libcontrolcsc.so \
 	$(LOCAL_PATH)/proprietary/lib/libISP.so:system/lib/libISP.so \
