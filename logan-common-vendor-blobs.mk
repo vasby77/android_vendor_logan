@@ -20,7 +20,6 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_face_tracking.so:system/lib/libarcsoft_face_tracking.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
 #$(LOCAL_PATH)/proprietary/lib/libarcsoft_smile_detection.so:system/lib/libarcsoft_smile_detection.so \
-#$(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 #$(LOCAL_PATH)/proprietary/lib/libfacerecognition.so:system/lib/libfacerecognition.so \
 #$(LOCAL_PATH)/proprietary/lib/libfacetracker.so:system/lib/libfacetracker.so \
 #$(LOCAL_PATH)/proprietary/lib/libgs.so:system/lib/libgs.so \
@@ -247,6 +246,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	$(LOCAL_PATH)/proprietary/lib/libv3d.so:system/lib/libv3d.so \
 	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
     $(LOCAL_PATH)/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
