@@ -97,6 +97,10 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
 #$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
 #$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
+#$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
+#$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
+#$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+#$(LOCAL_PATH)/proprietary/etc/srm.bin:system/etc/srm.bin \
 
 
 PRODUCT_COPY_FILES += \
@@ -214,9 +218,6 @@ PRODUCT_COPY_FILES += \
 	
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/egl/libGLES_hawaii.so:system/lib/egl/libGLES_hawaii.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.hawaii.so:system/lib/hw/audio.primary.hawaii.so \
     $(LOCAL_PATH)/proprietary/lib/hw/camera.hawaii.so:system/lib/hw/camera.hawaii.so \
     $(LOCAL_PATH)/proprietary/lib/hw/gps.hawaii.so:system/lib/hw/gps.hawaii.so \
@@ -244,7 +245,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
 	$(LOCAL_PATH)/proprietary/etc/asound.conf:system/etc/asound.conf \
     $(LOCAL_PATH)/proprietary/etc/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/proprietary/etc/srm.bin:system/etc/srm.bin \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
