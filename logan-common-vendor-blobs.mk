@@ -38,7 +38,6 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libsavsac.so:system/lib/libsavsac.so \
 #$(LOCAL_PATH)/proprietary/lib/libsavsff.so:system/lib/libsavsff.so \
 #$(LOCAL_PATH)/proprietary/lib/libsavsmeta.so:system/lib/libsavsmeta.so \
-#$(LOCAL_PATH)/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
 #$(LOCAL_PATH)/proprietary/lib/libsfextavi.so:system/lib/libsfextavi.so \
 #$(LOCAL_PATH)/proprietary/lib/libsfextcmn.so:system/lib/libsfextcmn.so \
 #$(LOCAL_PATH)/proprietary/lib/libsfextcp.so:system/lib/libsfextcp.so \
@@ -248,6 +247,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+	$(LOCAL_PATH)/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
 	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
 	$(LOCAL_PATH)/proprietary/lib/libv3d.so:system/lib/libv3d.so \
 	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
