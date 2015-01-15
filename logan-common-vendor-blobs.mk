@@ -87,19 +87,11 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_mpeg4enc.so:system/lib/libstagefright_soft_mpeg4enc.so
 #$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264dec.so:system/lib/libstagefright_soft_h264dec.so \
 #$(LOCAL_PATH)/proprietary/lib/libstagefright_soft_h264enc.so:system/lib/libstagefright_soft_h264enc.so
-#$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 #$(LOCAL_PATH)/proprietary/bin/immvibed:system/bin/immvibed \
 #$(LOCAL_PATH)/proprietary/lib/libImmVibeJ.so:system/lib/libImmVibeJ.so \
 #$(LOCAL_PATH)/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
 #$(LOCAL_PATH)/proprietary/lib/libbinder.so:system/lib/libbinder.so \
 #$(LOCAL_PATH)/proprietary/lib/libutils.so:system/lib/libutils.so \
-#$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
-#$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
-#$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
-#$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
-#$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-#$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
-#$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
 #$(LOCAL_PATH)/proprietary/etc/srm.bin:system/etc/srm.bin \
 
 
@@ -116,6 +108,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/mfgloader:system/bin/mfgloader \
 	$(LOCAL_PATH)/proprietary/bin/wlandutservice:system/bin/wlandutservice \
 	$(LOCAL_PATH)/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
+	$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
 	$(LOCAL_PATH)/proprietary/bin/sensord:system/bin/sensord
 	
 # mp3 
@@ -199,6 +192,7 @@ PRODUCT_COPY_FILES += \
 # other
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libvpx_dec.so:system/lib/libvpx_dec.so \
+	$(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
 	$(LOCAL_PATH)/proprietary/lib/libtiming.so:system/lib/libtiming.so \
 	$(LOCAL_PATH)/proprietary/lib/libBrcmOMX_Component.so:system/lib/libBrcmOMX_Component.so \
     $(LOCAL_PATH)/proprietary/lib/libBrcmOMX_Core.so:system/lib/libBrcmOMX_Core.so \
@@ -225,6 +219,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.hawaii.so:system/lib/hw/hwcomposer.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/sensors.hawaii.so:system/lib/hw/sensors.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
+	$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
 	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
 	$(LOCAL_PATH)/proprietary/vendor/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so
 
@@ -245,10 +243,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
 	$(LOCAL_PATH)/proprietary/etc/asound.conf:system/etc/asound.conf \
     $(LOCAL_PATH)/proprietary/etc/gps.conf:system/etc/gps.conf \
+	$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
 	$(LOCAL_PATH)/proprietary/lib/libv3d.so:system/lib/libv3d.so \
 	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
     $(LOCAL_PATH)/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
