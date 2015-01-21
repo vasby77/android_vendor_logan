@@ -92,6 +92,8 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/libbinder.so:system/lib/libbinder.so \
 #$(LOCAL_PATH)/proprietary/lib/libutils.so:system/lib/libutils.so \
 #$(LOCAL_PATH)/proprietary/etc/srm.bin:system/etc/srm.bin \
+#$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
+#$(LOCAL_PATH)/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
 
 
 PRODUCT_COPY_FILES += \
@@ -186,7 +188,8 @@ PRODUCT_COPY_FILES += \
 # wma	
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libsomxwmad.so:system/lib/libsomxwmad.so \
-    $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so
+    $(LOCAL_PATH)/proprietary/lib/libOMX.brcm.audio.wma.decoder.so:system/lib/libOMX.brcm.audio.wma.decoder.so \
+	$(LOCAL_PATH)/proprietary/lib/libbrcmwmadec.so:system/lib/libbrcmwmadec.so
 
 # other
 PRODUCT_COPY_FILES += \
@@ -220,7 +223,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-	$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
 	$(LOCAL_PATH)/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
 	$(LOCAL_PATH)/proprietary/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so \
 	$(LOCAL_PATH)/proprietary/vendor/lib/hw/power.hawaii.so:system/vendor/lib/hw/power.hawaii.so
@@ -283,7 +285,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libSoundAlive_VSP_ver312a.so:system/lib/libSoundAlive_VSP_ver312a.so \
 	$(LOCAL_PATH)/proprietary/lib/libsoundspeed.so:system/lib/libsoundspeed.so \
 	$(LOCAL_PATH)/proprietary/lib/libjpeg_turbo.so:system/lib/libjpeg_turbo.so \
-	$(LOCAL_PATH)/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
 	$(LOCAL_PATH)/proprietary/lib/librpc.so:system/lib/librpc.so \
 	$(LOCAL_PATH)/proprietary/lib/libsthmb.so:system/lib/libsthmb.so \
 	$(LOCAL_PATH)/proprietary/lib/libVCOS.so:system/lib/libVCOS.so \
