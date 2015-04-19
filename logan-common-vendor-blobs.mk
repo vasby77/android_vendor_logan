@@ -1,10 +1,7 @@
 LOCAL_PATH := vendor/samsung/logan
 
 #$(LOCAL_PATH)/proprietary/lib/libvwengine.so:system/lib/libvwengine.so \
-#$(LOCAL_PATH)/proprietary/lib/libseckeyprov.so:system/lib/libseckeyprov.so \
 #$(LOCAL_PATH)/proprietary/lib/libsamsungtts.so:system/lib/libsamsungtts.so
-#$(LOCAL_PATH)/proprietary/lib/liblvvefs.so:system/lib/liblvvefs.so \
-#$(LOCAL_PATH)/proprietary/lib/libhdcp2.so:system/lib/libhdcp2.so \
 #$(LOCAL_PATH)/proprietary/lib/libdeblock.so:system/lib/libdeblock.so \
 #$(LOCAL_PATH)/proprietary/bin/p2p_supplicant:system/bin/p2p_supplicant \
 #$(LOCAL_PATH)/proprietary/bin/usbdev_mode:system/bin/usbdev_mode \
@@ -95,6 +92,15 @@ LOCAL_PATH := vendor/samsung/logan
 #$(LOCAL_PATH)/proprietary/lib/hw/audio_policy.hawaii.so:system/lib/hw/audio_policy.hawaii.so \
 #$(LOCAL_PATH)/proprietary/lib/libaudiopolicy_sec.so:system/lib/libaudiopolicy_sec.so \
 #$(LOCAL_PATH)/proprietary/bin/atrace:system/bin/atrace \
+#$(LOCAL_PATH)/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
+#$(LOCAL_PATH)/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
+#$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+#$(LOCAL_PATH)/proprietary/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
+#$(LOCAL_PATH)/proprietary/lib/libsecimaging.so:system/lib/libsecimaging.so \
+#$(LOCAL_PATH)/proprietary/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
+#$(LOCAL_PATH)/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
+#$(LOCAL_PATH)/proprietary/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so 
+
 
 
 PRODUCT_COPY_FILES += \
@@ -107,10 +113,8 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/mttlogger:system/bin/mttlogger \
     $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
 	$(LOCAL_PATH)/proprietary/bin/mfgloader:system/bin/mfgloader \
-	$(LOCAL_PATH)/proprietary/bin/wlandutservice:system/bin/wlandutservice \
-	$(LOCAL_PATH)/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
-	$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
-	$(LOCAL_PATH)/proprietary/bin/sensord:system/bin/sensord
+	$(LOCAL_PATH)/proprietary/bin/sensord:system/bin/sensord \
+	$(LOCAL_PATH)/proprietary/bin/wlandutservice:system/bin/wlandutservice
 	
 # mp3 
 PRODUCT_COPY_FILES += \
@@ -231,7 +235,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so:system/usr/lib/alsa-lib/libasound_module_pcm_bcmfilter.so \
     $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libbcm_hp_filter.so:system/usr/lib/alsa-lib/libbcm_hp_filter.so \
     $(LOCAL_PATH)/proprietary/usr/lib/alsa-lib/libbcm_test_filter.so:system/usr/lib/alsa-lib/libbcm_test_filter.so \
-    $(LOCAL_PATH)/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf 
+    $(LOCAL_PATH)/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
@@ -244,15 +248,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/etc/gps/glconfig.xml:system/etc/gps/glconfig.xml \
 	$(LOCAL_PATH)/proprietary/etc/asound.conf:system/etc/asound.conf \
     $(LOCAL_PATH)/proprietary/etc/gps.conf:system/etc/gps.conf \
-	$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
     $(LOCAL_PATH)/proprietary/etc/Volume.db:system/etc/Volume.db
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
 	$(LOCAL_PATH)/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-	$(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
 	$(LOCAL_PATH)/proprietary/lib/libsavsvc.so:system/lib/libsavsvc.so \
-	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
 	$(LOCAL_PATH)/proprietary/lib/libv3d.so:system/lib/libv3d.so \
 	$(LOCAL_PATH)/proprietary/lib/libvcdecoder_jni.so:system/lib/libvcdecoder_jni.so \
     $(LOCAL_PATH)/proprietary/lib/libV3D_csc.so:system/lib/libV3D_csc.so \
@@ -289,9 +290,9 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libjpeg_turbo.so:system/lib/libjpeg_turbo.so \
 	$(LOCAL_PATH)/proprietary/lib/librpc.so:system/lib/librpc.so \
 	$(LOCAL_PATH)/proprietary/lib/libsthmb.so:system/lib/libsthmb.so \
-	$(LOCAL_PATH)/proprietary/lib/libVCOS.so:system/lib/libVCOS.so \
 	$(LOCAL_PATH)/proprietary/lib/libwvdrm_L3.so:system/lib/libwvdrm_L3.so \
 	$(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so \
+	$(LOCAL_PATH)/proprietary/lib/libVCOS.so:system/lib/libVCOS.so \
 	$(LOCAL_PATH)/proprietary/lib/libVCE_csl.so:system/lib/libVCE_csl.so \
 	$(LOCAL_PATH)/proprietary/lib/libVCE_driver.so:system/lib/libVCE_driver.so \
     $(LOCAL_PATH)/proprietary/lib/libVCE_imageconv.so:system/lib/libVCE_imageconv.so \
@@ -304,14 +305,11 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libisp3.so:system/lib/libisp3.so \
 	$(LOCAL_PATH)/proprietary/lib/libexifa.so:system/lib/libexifa.so \
 	$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so \
-	$(LOCAL_PATH)/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so
 	
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/libseccameracore.so:system/lib/libseccameracore.so \
-	$(LOCAL_PATH)/proprietary/lib/libseccamera_jni.so:system/lib/libseccamera_jni.so \
-	$(LOCAL_PATH)/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-	$(LOCAL_PATH)/proprietary/lib/libseccameraeffect.so:system/lib/libseccameraeffect.so \
-	$(LOCAL_PATH)/proprietary/lib/libsecimaging.so:system/lib/libsecimaging.so \
-	$(LOCAL_PATH)/proprietary/lib/libsecjpeginterface.so:system/lib/libsecjpeginterface.so \
-	$(LOCAL_PATH)/proprietary/lib/libexif_jni.so:system/lib/libexif_jni.so \
-	$(LOCAL_PATH)/proprietary/lib/libsecmediarecorder_jni.so:system/lib/libsecmediarecorder_jni.so 
+	$(LOCAL_PATH)/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
+	$(LOCAL_PATH)/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so \
+	$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
+	$(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
+	$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf
