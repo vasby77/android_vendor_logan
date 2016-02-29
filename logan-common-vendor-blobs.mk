@@ -135,12 +135,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/lib/libisp3.so:system/lib/libisp3.so \
 	$(LOCAL_PATH)/proprietary/lib/libjpega.so:system/lib/libjpega.so
 	
-PRODUCT_COPY_FILES += \
+ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/proprietary/bin/cate_rpc_util:system/bin/cate_rpc_util \
 	$(LOCAL_PATH)/proprietary/lib/libcate_rpc.so:system/lib/libcate_rpc.so \
 	$(LOCAL_PATH)/proprietary/bin/usb_portd:system/bin/usb_portd \
 	$(LOCAL_PATH)/proprietary/bin/usbdev_mode:system/bin/usbdev_mode \
 	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so \
 	$(LOCAL_PATH)/proprietary/etc/usb_portd.conf:system/etc/usb_portd.conf \
- 	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so	
+ 	$(LOCAL_PATH)/proprietary/lib/libusb_config.so:system/lib/libusb_config.so
 	
