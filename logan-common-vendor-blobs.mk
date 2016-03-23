@@ -92,7 +92,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/libasound.so:system/lib/libasound.so \
 	$(LOCAL_PATH)/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-	$(LOCAL_PATH)/lib/libsamsungRecord_ns.so:system/lib/libsamsungRecord_ns.so \
 	$(LOCAL_PATH)/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
 	$(LOCAL_PATH)/lib/lib_Samsung_Resampler.so:system/lib/lib_Samsung_Resampler.so \
 	$(LOCAL_PATH)/lib/lib_DNSe_NRSS_ver224c.so:system/lib/lib_DNSe_NRSS_ver224c.so \
