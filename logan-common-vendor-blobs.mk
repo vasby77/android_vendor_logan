@@ -71,8 +71,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/lib/hw/audio.usb.hawaii.so:system/lib/hw/audio.usb.hawaii.so \
 	$(LOCAL_PATH)/lib/hw/bplus.default.so:system/lib/hw/bplus.default.so \
 	$(LOCAL_PATH)/lib/hw/alsa.default.so:system/lib/hw/alsa.default.so \
-	$(LOCAL_PATH)/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
-	$(LOCAL_PATH)/vendor/lib/hw/lights.hawaii.so:system/vendor/lib/hw/lights.hawaii.so
+	$(LOCAL_PATH)/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so
 
 # Etc
 PRODUCT_COPY_FILES += \
